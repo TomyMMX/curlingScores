@@ -1,0 +1,116 @@
+body {
+  padding-top: 50px; /* Account for fixed navbar */
+  min-width: 150px;
+}
+
+h1, h2, h3 {
+  margin-bottom: 20px;
+}
+
+/* Custom container */
+.container-narrow {
+  margin: 0 auto;
+  max-width: 800px;
+  background-color: white;
+  min-height: 318px;
+}
+
+.container-nav {  
+  width: 100%;
+  min-width: inherit;
+  background-color: #303030;    
+}
+
+/* Top nav and header
+-------------------------------------------------- */
+
+.bs-peng-nav {
+  background-color: inherit;
+  min-height: 43px;
+}
+
+.bs-peng-nav .navbar-toggle{
+  margin-bottom: 5px;
+  margin-top: 4px;
+}
+.bs-peng-nav .navbar-brand,
+.bs-peng-nav .navbar-brand:hover,
+.bs-peng-nav .navbar-brand:focus {
+  font-size: 20px;
+  padding: 2px 2px;
+  margin: 6px 30px 0px -15px; 
+  max-width: 90px;
+}
+.bs-peng-nav .navbar-nav > li{
+  color: #ffaa22;
+}
+
+.bs-peng-nav .navbar-nav > li > a {
+  color: #eeeeee;
+  padding-bottom: 11px;
+  padding-top: 11px;
+  font-size: 17px;
+}
+.bs-peng-nav .navbar-nav > li > a:hover {
+  color: inherit;
+}
+.bs-peng-nav .navbar-nav > .active > a,
+.bs-peng-nav .navbar-nav > .active > a:hover,
+.bs-peng-nav .navbar-nav > .active > a:focus {
+  color: inherit;
+  background-color: #424242;
+}
+
+/* Live score
+-------------------------------------------------- */
+.score{
+  margin:2px;
+}
+
+.score table{
+  margin-bottom:0px;
+  border-bottom: 1px solid rgb(55,55,55);  
+}
+.show-grid-odd {
+    background-color: #EEEEEE; 
+}
+.show-grid {
+    background-color: #EEEEEE;  
+}
+.score thead > tr > th, .score tbody > tr > th, .score tfoot > tr > th, .score thead > tr > td, .score tbody > tr > td, .score tfoot > tr > td {
+  text-align:center;
+  vertical-align: middle;
+}
+.score tbody tr{
+  height:45px;  
+}
+
+.score thead th{
+  height:40px;  
+}
+.alert{
+  display: none; 
+  margin-top: 42px; 
+  max-width: 450px;
+}
+
+.scoreTitle{
+  font-size: 16px;
+  margin-left:4px;
+}
+
+.livescore{
+  margin-bottom: 5px;
+}
+
+.hiddenLs{
+  display: none; 
+}
+
+.codeBtn{
+  float: right;
+  margin-right: 2px;
+  margin-bottom: 5px;
+}
+    
+    

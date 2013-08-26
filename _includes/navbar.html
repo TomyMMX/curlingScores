@@ -1,0 +1,20 @@
+<div class="navbar navbar-inverse bs-peng-nav container-narrow">
+  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
+  <a class="navbar-brand" href="http://pingvini.curling.si/">
+    <img src="{{ site.baseurl }}/assets/pic/name_white.png" height="30" alt="Pingvini">
+  </a>
+  <div class="nav-collapse collapse">
+    <ul class="nav navbar-nav">{% assign first_level = page.url | remove_first:'/' | split:'/' | first %}
+      <li{% if page.url == '/index.html' %} class="active"{% endif %}>
+        <a href="{{ site.baseurl }}/">Scores</a>
+      </li>
+      <li{% if first_level == 'edit' %} class="active"{% endif %}>
+        <a href="{{ site.baseurl }}/edit/">Editor</a>
+      </li>     
+    </ul>
+  </div><!--/.nav-collapse -->
+</div>

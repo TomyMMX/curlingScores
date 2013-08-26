@@ -1,0 +1,297 @@
+--- 
+  title: Edit scores
+  layout: default 
+  navbar: true 
+  weight: 40 
+---
+<div class="alert alert-success navbar-fixed-top">
+  <a class="close">x</a> 
+  <strong>Success!</strong> Updated score was published.
+</div>
+<div class="alert alert-error navbar-fixed-top">
+  <a class="close">x</a> 
+  <div id="errorText"></div>
+</div>
+
+<h2>Live score editor</h2>
+<div id="scoreTable">
+  <table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Event</th>
+      <th>Location</th>
+      <th>Date and Time</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody id="pastTable">
+  </tbody>
+  <tfoot>
+     <tr class="success">
+      <td><input id="tbNewEvent" placeholder="Event name" type="text" class="form-control"></td>
+      <td><input id="tbNewLocation" placeholder="Game location" type="text" class="form-control"></td>
+      <td><input id="tbNewDateTime" placeholder="Game Date and Time" type="text" class="form-control"></td>
+      <td style="vertical-align: middle;"><button id="btnAddGame" type="button" class="btn btn-primary">Add game</button></td>
+    </tr>   
+  </tfoot>
+  </table>  
+</div>
+
+<div id="liveEditor" class="hiddenLs">
+  <button id="btnBack" type="button" class="btn btn-primary" style="margin-left:2px;">&lt;-Back</button>
+  <div class="score row">
+    <div class="col-12 col-lg-12 col-sm-12">
+      <div class="row">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>
+                <div class="row">
+                  <div class="col-4 col-lg-4 col-sm-4">
+                    <input id="tbFile" type="hidden">
+                    <input id="tbEvent" placeholder="Event name" type="text" class="form-control col-lg-2">
+                  </div>   
+                   <div class="col-4 col-lg-4 col-sm-4">   
+                    <input id="tbLocation" placeholder="Location" type="text" class="form-control col-lg-2">
+                  </div>                  
+                  <div class="col-4 col-lg-4 col-sm-4">
+                    <input id="tbDateTime" placeholder="Date and Time" type="text" class="form-control col-lg-2">
+                  </div> 
+               </div>
+              </th>
+              <th>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                Pingvini
+              </td>
+              <td class="hammer">
+                <img src="{{%20site.baseurl%20}}/assets/pic/hammer.png" alt=
+                "H" height="20px">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input id="opponent" type="text" class="form-control text-center" placeholder="Team name">
+              </td>
+              <td class="hammer">
+                <img class="hidden" src=
+                "{{%20site.baseurl%20}}/assets/pic/hammer.png" alt="H"
+                height="20px">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="col-6 col-lg-4 col-sm-4">
+      <div class="row show-grid">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>
+                1
+              </th>
+              <th>
+                2
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <input id="tbS11" type="number" class="form-control">
+              </td>
+              <td>
+                <input id="tbS21" type="number" class="form-control">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input id="tbS12" type="number" class="form-control">
+              </td>
+              <td>
+                <input id="tbS22" type="number" class="form-control">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="col-6 col-lg-4 col-sm-4">
+      <div class="row show-grid-odd">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>
+                3
+              </th>
+              <th>
+                4
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <input id="tbS31" type="number" class="form-control">
+              </td>
+              <td>
+                <input id="tbS41" type="number" class="form-control">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input id="tbS32" type="number" class="form-control">
+              </td>
+              <td>
+                <input id="tbS42" type="number" class="form-control">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="col-6 col-lg-4 col-sm-4">
+      <div class="row show-grid">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>
+                5
+              </th>
+              <th>
+                6
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <input id="tbS51" type="number" class="form-control">
+              </td>
+              <td>
+                <input id="tbS61" type="number" class="form-control">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input id="tbS52" type="number" class="form-control">
+              </td>
+              <td>
+                <input id="tbS62" type="number" class="form-control">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="col-6 col-lg-4 col-sm-4">
+      <div class="row show-grid-odd">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>
+                7
+              </th>
+              <th>
+                8
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <input id="tbS71" type="number" class="form-control">
+              </td>
+              <td>
+                <input id="tbS81" type="number" class="form-control">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input id="tbS72" type="number" class="form-control">
+              </td>
+              <td>
+                <input id="tbS82" type="number" class="form-control">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="col-6 col-lg-4 col-sm-4">
+      <div class="row show-grid">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>
+                9
+              </th>
+              <th>
+                10
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <input id="tbS91" type="number" class="form-control">
+              </td>
+              <td>
+                <input id="tbS101" type="number" class="form-control">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input id="tbS92" type="number" class="form-control">
+              </td>
+              <td>
+                <input id="tbS102" type="number" class="form-control">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="col-6 col-lg-4 col-sm-4">
+      <div class="row show-grid-odd">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>
+                Extr.
+              </th>
+              <th>
+                FINAL
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="width:50%;">
+                <input id="tbSe1" type="number" class="form-control">
+              </td>
+              <td id="final1"></td>
+            </tr>
+            <tr>
+              <td>
+                <input id="tbSe2" type="number" class="form-control">
+              </td>
+              <td id="final2"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <h3>
+    Live comments:
+  </h3>
+  <textarea id="liveComments" class="form-control" rows="5"></textarea>
+</div>
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<script src="{{%20site.baseurl%20}}/assets/js/liveScoreEdit.js" type="text/javascript"></script>
