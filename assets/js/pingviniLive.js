@@ -1,14 +1,3 @@
---- 
-  title: Live scores
-  layout: default 
-  navbar: true 
-  weight: 40 
----
-<script src="http://code.jquery.com/jquery.min.js"></script>
-
-<div id="liveScore"></div>
-<script type="text/javascript">
-var gameCode = 'H9qOD9mn';
 $.ajax({
   headers : {'Accept':'application/json', 
              'Content-Type':'application/json'},
@@ -30,7 +19,8 @@ $.ajax({
     }
     var reg = new RegExp('\\[([^\\[]*)\\]', 'g');   
     var result;
-    while((result = reg.exec(tableOut)) !== null) {
+    while((result = reg.exec(response.files["rawTable"].content)) 
+           !== null) {
       tableOut=
         tableOut.replace("["+result[1]+"]", gamedata[result[1]]);
     }
@@ -40,7 +30,3 @@ $.ajax({
   error : function(jqXHR, textStatus, errorThrown) {},
   complete : function() {}
 });
-</script>
-
-
-

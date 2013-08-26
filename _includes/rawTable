@@ -1,0 +1,264 @@
+<div class="livescore">
+<div class="scoreTitle"><strog>[location], [dateTime]</strong></div>
+  <div class="score row" style="clear:both;">
+    <div class="col-12 col-lg-3 col-sm-12">
+      <div class="row">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th colspan="2">                
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                Pingvini
+              </td>
+              <td>
+                <img class="[H1]" src="http://i.imgur.com/cJNfZCn.png" alt="H" height="20px">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                [opponent]
+              </td>
+              <td>
+                <img class="[H2]" src="http://i.imgur.com/cJNfZCn.png" alt="H" height="20px">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="col-6 col-lg-1 col-sm-4">
+      <div class="row show-grid">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>
+                1
+              </th>
+              <th>
+                2
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                [tbS11]
+              </td>
+              <td>
+                [tbS21]
+              </td>
+            </tr>
+            <tr>
+              <td>
+                [tbS12]
+              </td>
+              <td>
+                [tbS22]
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="col-6 col-lg-1 col-sm-4">
+      <div class="row show-grid-odd">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>
+                3
+              </th>
+              <th>
+                4
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                [tbS31]
+              </td>
+              <td>
+                [tbS41]
+              </td>
+            </tr>
+            <tr>
+              <td>
+                [tbS32]
+              </td>
+              <td>
+                [tbS42]
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="col-6 col-lg-1 col-sm-4">
+      <div class="row show-grid">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>
+                5
+              </th>
+              <th>
+                6
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                [tbS51]
+              </td>
+              <td>
+                [tbS61]
+              </td>
+            </tr>
+            <tr>
+              <td>
+                [tbS52]
+              </td>
+              <td>
+                [tbS62]
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="col-6 col-lg-1 col-sm-4">
+      <div class="row show-grid-odd">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>
+                7
+              </th>
+              <th>
+                8
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                [tbS71]
+              </td>
+              <td>
+                [tbS81]
+              </td>
+            </tr>
+            <tr>
+              <td>
+                [tbS72]
+              </td>
+              <td>
+                [tbS82]
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="col-6 col-lg-1 col-sm-4">
+      <div class="row show-grid">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>
+                9
+              </th>
+              <th>
+                10
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                [tbS91]
+              </td>
+              <td>
+                [tbS101]
+              </td>
+            </tr>
+            <tr>
+              <td>
+                [tbS92]
+              </td>
+              <td>
+                [tbS102]
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="col-6 col-lg-1 col-sm-4">
+      <div class="row show-grid-odd">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>
+                Extr.
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                [tbSe1]
+              </td>
+            </tr>
+            <tr>
+              <td>
+                [tbSe2]
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="col-12 col-lg-3 col-sm-12">
+      <div class="row show-grid">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>
+                TOTAL
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <strong>[final1]</strong>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>[final2]</strong>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="[lcClass]">
+    <h3>
+      Live comments:
+    </h3>
+    <div style="margin-top:-15px;">
+      [liveComments]
+    </div>
+  </div>
+</div>
+<br />

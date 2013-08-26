@@ -17,38 +17,8 @@
 &lt;div id="liveScore">&lt;/div>
 &lt;script type="text/javascript">
 var gameCode = '[gameCode]';
-$.ajax({
-  headers : {'Accept':'application/json', 
-             'Content-Type':'application/json'},
-  url : 'https://api.github.com/gists/6330648',
-  type : 'GET',
-  success : function(response, textStatus, jqXhr) {
-    var tableOut= response.files["rawTable"].content;
-    var gamedata = {};
-    try{
-      gamedata = 
-        jQuery.parseJSON(response.files[gameCode].content);
-    }catch(err){
-      alert("Game "+gameCode+" does not exist!");
-      return;
-    }      
-    /*replace placeholders with data*/            
-    if(gamedata["liveComments"].length<3){
-        tableOut=tableOut.replace("[lcClass]", "hidden");       
-    }
-    var reg = new RegExp('\\[([^\\[]*)\\]', 'g');   
-    var result;
-    while((result = reg.exec(tableOut)) !== null) {
-      tableOut=
-        tableOut.replace("["+result[1]+"]", gamedata[result[1]]);
-    }
-    //add this game to output      
-    $('#liveScore').html(tableOut);
-  },
-  error : function(jqXHR, textStatus, errorThrown) {},
-  complete : function() {}
-});
-&lt;/script></pre>          
+&lt;/script>
+&lt;script src="{{ site.url }}{{ site.baseurl }}/assets/js/pingviniLive.js">&lt;/script></pre> 
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -58,6 +28,7 @@ $.ajax({
   </div><!-- /.modal -->
 
 <script src="http://code.jquery.com/jquery.min.js"></script>
+<script src="{{ site.baseurl }}/assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="{{%site.baseurl%}}/assets/js/liveScores.js" type="text/javascript"></script>
 <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
 

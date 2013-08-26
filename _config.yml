@@ -4,4 +4,5 @@ timezone: Europe/Ljubljana
 future: false
 markdown: redcarpet
 safe: true
-baseurl: ""
+baseurl: "/curlingScores"
+url: "http://tomymmx.github.io"

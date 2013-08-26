@@ -1,7 +1,5 @@
 $(document).ready(function() {
   loadPastGames(); 
-  
-  /*liveScore*/
   $("[id ^=tbS]").focus(function() { 
         $(this).select(); 
   });
@@ -33,11 +31,7 @@ $(document).ready(function() {
     });      
     generateTableJson();
   });
-  $('#liveComments').change(function() { 
-    sumScore();
-    generateTableJson();
-  });
-  $('input[id^=tbS], #opponent, #tbLocation, #tbDateTime, #tbEvent').change(function() { 
+  $('input[id^=tbS], #opponent, #tbLocation, #tbDateTime, #tbEvent, #liveComments').change(function() { 
     var currentId = $(this).attr('id');
     var cidLen = currentId.length-1;
     var otherId = currentId.replaceAt(cidLen, 
@@ -95,7 +89,10 @@ function generateNewGame(){
     $("#tbNewDateTime").val("");
     $("#tbNewLocation").val("");
     $("#tbNewEvent").val("");
-    
+
+     var newRow = "<tr><td id=\"lbEv_"+newName+"\">"+$("#tbEvent").val()+"</td><td id=\"lbLc_"+newName+"\">"+$("#tbLocation").val()+"</td><td id=\"lbTm_"+newName+"\">"+$("#tbDateTime").val()+"</td><td><button id=\"btnE_"+newName+"\" type=\"button\" class=\"btn btn-primary btn-xs\">Edit</button></td></tr>";   
+    $("#pastTable").html($("#pastTable").html()+newRow);
+
     gameFiles[gameFiles.length] = newName;  
     
     showEditor();
@@ -123,8 +120,13 @@ function editExistingGame(gameName){
   $("#tbDateTime").val(thisGame["dateTime"]);
   $("#tbEvent").val(thisGame["eventName"]);
  
- /*tableOut=tableOut.replace("[H1]", gamedata["H1"]);
-   tableOut=tableOut.replace("[H2]", gamedata["H2"]);*/
+  $(".hammer").each(function(index) {  
+    if(thisGame["H"+(index+1)]=='hidden'){
+      $(this).children().addClass("hidden");
+    }else{
+      $(this).children().removeClass("hidden");
+    }
+  });
       
   var regex = new RegExp("<br>", "g");
   $("#liveComments").val(thisGame["liveComments"].replace(regex, "\n"));  
@@ -135,15 +137,7 @@ function editExistingGame(gameName){
 
 function clearEditTable()
 {
-   $("#tbFile").val("");
-   $("#tbEvent").val("");
-   $("#tbLocation").val("");
-   $("#tbDateTime").val("");
-   $("#opponent").val("");
-   $("#liveComments").val("");
-   $('[id ^=tbS]').each(function( index ) {
-      $(this).val("");
-   });    
+   $("#liveEditor input").val(""); 
    sumScore();
 }
 
@@ -173,10 +167,10 @@ function generateTableJson(){
   
   $(".hammer").each(function(index) {  
     if(!$(this).children().hasClass("hidden")){
-      data["H"+(index+1)]=$(this).html(); 
+      data["H"+(index+1)]="";
     }
     else{
-       data["H"+(index+1)]="";
+       data["H"+(index+1)]="hidden";
     }
   });
   $('[id ^=tbS]').each(function( index ) {
@@ -200,7 +194,6 @@ function generateTableJson(){
     else{
       return;
     }
-  //65ba7f89054be0a238eab7b37c70bab82b8cf3cf
   }
   $.ajax({
     headers : {
@@ -304,5 +297,3 @@ function readCookie(name) {
 function eraseCookie(name) {
 	createCookie(name,"",-1);
 }
-
-
