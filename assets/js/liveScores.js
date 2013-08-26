@@ -72,7 +72,7 @@ function generateTables(){
 }
 var prevCode = '[gameCode]';
 function addGame(gamedata, tableHtml, fileName){
-  var tableOut="<a data-toggle=\"modal\" id=\"btnCs_"+fileName+"\" class=\"btn btn-primary btn-sm codeBtn\">Include code</a>"
+  var tableOut="<a data-toggle=\"modal\" id=\"btnCs_"+fileName+"\" class=\"btn btn-primary btn-sm score-code-btn\">Include code</a>"
   tableOut += tableHtml;
   if(gamedata["liveComments"].length<3){
     tableOut=tableOut.replace("[lcClass]", "hidden");       

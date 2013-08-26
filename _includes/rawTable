@@ -1,16 +1,16 @@
 <div class="livescore">  
-  <div class="score row" style="clear:both;">
+  <div class="score row" style="clear:both; margin-left:0px; margin-right:0px;">
     <div class="col-12 col-lg-3 col-sm-3">
       <div class="row">
         <table class="table table-striped">
-          <thead>
+          <thead style="height:38px;">
             <tr>
               <th colspan="2">                
               </th>
             </tr>
           </thead>
           <tbody>
-            <tr>
+            <tr style="height:40px;">
               <td>
                 Pingvini
               </td>
@@ -18,7 +18,7 @@
                 <img class="[H1]" src="http://i.imgur.com/cJNfZCn.png" alt="H" height="20px">
               </td>
             </tr>
-            <tr>
+            <tr style="height:40px;">
               <td>
                 [opponent]
               </td>
@@ -33,7 +33,7 @@
     <div class="col-6 col-lg-1 col-sm-1">
       <div class="row show-grid">
         <table class="table table-striped">
-          <thead>
+          <thead style="height:38px;">
             <tr>
               <th>
                 1
@@ -44,7 +44,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
+            <tr style="height:40px;">
               <td>
                 [tbS11]
               </td>
@@ -52,7 +52,7 @@
                 [tbS21]
               </td>
             </tr>
-            <tr>
+            <tr style="height:40px;">
               <td>
                 [tbS12]
               </td>
@@ -67,7 +67,7 @@
     <div class="col-6 col-lg-1 col-sm-1">
       <div class="row show-grid-odd">
         <table class="table table-striped">
-          <thead>
+          <thead style="height:38px;">
             <tr>
               <th>
                 3
@@ -78,7 +78,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
+            <tr style="height:40px;">
               <td>
                 [tbS31]
               </td>
@@ -86,7 +86,7 @@
                 [tbS41]
               </td>
             </tr>
-            <tr>
+            <tr style="height:40px;">
               <td>
                 [tbS32]
               </td>
@@ -101,7 +101,7 @@
     <div class="col-6 col-lg-1 col-sm-1">
       <div class="row show-grid">
         <table class="table table-striped">
-          <thead>
+          <thead style="height:38px;">
             <tr>
               <th>
                 5
@@ -112,7 +112,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
+            <tr style="height:40px;">
               <td>
                 [tbS51]
               </td>
@@ -120,7 +120,7 @@
                 [tbS61]
               </td>
             </tr>
-            <tr>
+            <tr style="height:40px;">
               <td>
                 [tbS52]
               </td>
@@ -135,7 +135,7 @@
     <div class="col-6 col-lg-1 col-sm-1">
       <div class="row show-grid-odd">
         <table class="table table-striped">
-          <thead>
+          <thead style="height:38px;">
             <tr>
               <th>
                 7
@@ -146,7 +146,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
+            <tr style="height:40px;">
               <td>
                 [tbS71]
               </td>
@@ -154,7 +154,7 @@
                 [tbS81]
               </td>
             </tr>
-            <tr>
+            <tr style="height:40px;">
               <td>
                 [tbS72]
               </td>
@@ -169,7 +169,7 @@
     <div class="col-6 col-lg-1 col-sm-1">
       <div class="row show-grid">
         <table class="table table-striped">
-          <thead>
+          <thead style="height:38px;">
             <tr>
               <th>
                 9
@@ -180,7 +180,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
+            <tr style="height:40px;">
               <td>
                 [tbS91]
               </td>
@@ -188,7 +188,7 @@
                 [tbS101]
               </td>
             </tr>
-            <tr>
+            <tr style="height:40px;">
               <td>
                 [tbS92]
               </td>
@@ -203,7 +203,7 @@
     <div class="col-6 col-lg-4 col-sm-4">
       <div class="row show-grid-odd">
         <table class="table table-striped">
-          <thead>
+          <thead style="height:38px;">
             <tr>
               <th>
                 Extr.
@@ -214,7 +214,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
+            <tr style="height:40px;">
               <td>
                 [tbSe1]
               </td>
@@ -222,7 +222,7 @@
                 <strong>[final1]</strong>
               </td>
             </tr>
-            <tr>
+            <tr style="height:40px;">
               <td>
                 [tbSe2]
               </td>
@@ -235,12 +235,12 @@
       </div>
     </div>
   </div>
-  <div class="scoreTitle pull-right"><strog>[location], [dateTime]</strong></div>
-  <div class="[lcClass]">
-    <h3>
+  <div class="score-title pull-right"><strog>[location], [dateTime]</strong></div>
+  <div class="score-comments [lcClass]" style="margin-left:10px; margin-top:-5px;">
+    <h4>
       Live comments:
-    </h3>
-    <div style="margin-top:-15px;">
+    </h4>
+    <div style="margin-top:-5px;">
       [liveComments]
     </div>
   </div>
