@@ -1,7 +1,6 @@
-<div class="livescore">
-<div class="scoreTitle"><strog>[location], [dateTime]</strong></div>
+<div class="livescore">  
   <div class="score row" style="clear:both;">
-    <div class="col-12 col-lg-3 col-sm-12">
+    <div class="col-12 col-lg-3 col-sm-3">
       <div class="row">
         <table class="table table-striped">
           <thead>
@@ -31,7 +30,7 @@
         </table>
       </div>
     </div>
-    <div class="col-6 col-lg-1 col-sm-4">
+    <div class="col-6 col-lg-1 col-sm-1">
       <div class="row show-grid">
         <table class="table table-striped">
           <thead>
@@ -65,7 +64,7 @@
         </table>
       </div>
     </div>
-    <div class="col-6 col-lg-1 col-sm-4">
+    <div class="col-6 col-lg-1 col-sm-1">
       <div class="row show-grid-odd">
         <table class="table table-striped">
           <thead>
@@ -99,7 +98,7 @@
         </table>
       </div>
     </div>
-    <div class="col-6 col-lg-1 col-sm-4">
+    <div class="col-6 col-lg-1 col-sm-1">
       <div class="row show-grid">
         <table class="table table-striped">
           <thead>
@@ -133,7 +132,7 @@
         </table>
       </div>
     </div>
-    <div class="col-6 col-lg-1 col-sm-4">
+    <div class="col-6 col-lg-1 col-sm-1">
       <div class="row show-grid-odd">
         <table class="table table-striped">
           <thead>
@@ -167,7 +166,7 @@
         </table>
       </div>
     </div>
-    <div class="col-6 col-lg-1 col-sm-4">
+    <div class="col-6 col-lg-1 col-sm-1">
       <div class="row show-grid">
         <table class="table table-striped">
           <thead>
@@ -201,7 +200,7 @@
         </table>
       </div>
     </div>
-    <div class="col-6 col-lg-1 col-sm-4">
+    <div class="col-6 col-lg-4 col-sm-4">
       <div class="row show-grid-odd">
         <table class="table table-striped">
           <thead>
@@ -209,28 +208,6 @@
               <th>
                 Extr.
               </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                [tbSe1]
-              </td>
-            </tr>
-            <tr>
-              <td>
-                [tbSe2]
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-    <div class="col-12 col-lg-3 col-sm-12">
-      <div class="row show-grid">
-        <table class="table table-striped">
-          <thead>
-            <tr>
               <th>
                 TOTAL
               </th>
@@ -239,10 +216,16 @@
           <tbody>
             <tr>
               <td>
+                [tbSe1]
+              </td>
+              <td>
                 <strong>[final1]</strong>
               </td>
             </tr>
             <tr>
+              <td>
+                [tbSe2]
+              </td>
               <td>
                 <strong>[final2]</strong>
               </td>
@@ -252,6 +235,7 @@
       </div>
     </div>
   </div>
+  <div class="scoreTitle pull-right"><strog>[location], [dateTime]</strong></div>
   <div class="[lcClass]">
     <h3>
       Live comments:
@@ -261,4 +245,3 @@
     </div>
   </div>
 </div>
-<br />
