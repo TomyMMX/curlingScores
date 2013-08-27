@@ -1,6 +1,6 @@
 <div class="livescore">  
   <div class="score row" style="clear:both; margin-left:0px; margin-right:0px;">
-    <div class="col-12 col-lg-3 col-sm-3">
+    <div class="col-4 col-lg-3 col-sm-3">
       <div class="row">
         <table class="table table-striped">
           <thead style="height:38px;">
@@ -30,7 +30,7 @@
         </table>
       </div>
     </div>
-    <div class="col-6 col-lg-1 col-sm-1">
+    <div class="col-4 col-lg-1 col-sm-1">
       <div class="row show-grid">
         <table class="table table-striped">
           <thead style="height:38px;">
@@ -64,7 +64,7 @@
         </table>
       </div>
     </div>
-    <div class="col-6 col-lg-1 col-sm-1">
+    <div class="col-4 col-lg-1 col-sm-1">
       <div class="row show-grid-odd">
         <table class="table table-striped">
           <thead style="height:38px;">
@@ -98,7 +98,7 @@
         </table>
       </div>
     </div>
-    <div class="col-6 col-lg-1 col-sm-1">
+    <div class="col-4 col-lg-1 col-sm-1">
       <div class="row show-grid">
         <table class="table table-striped">
           <thead style="height:38px;">
@@ -132,7 +132,7 @@
         </table>
       </div>
     </div>
-    <div class="col-6 col-lg-1 col-sm-1">
+    <div class="col-4 col-lg-1 col-sm-1">
       <div class="row show-grid-odd">
         <table class="table table-striped">
           <thead style="height:38px;">
@@ -166,7 +166,7 @@
         </table>
       </div>
     </div>
-    <div class="col-6 col-lg-1 col-sm-1">
+    <div class="col-4 col-lg-1 col-sm-1">
       <div class="row show-grid">
         <table class="table table-striped">
           <thead style="height:38px;">
@@ -200,7 +200,7 @@
         </table>
       </div>
     </div>
-    <div class="col-6 col-lg-4 col-sm-4">
+    <div class="col-12 col-lg-4 col-sm-4">
       <div class="row show-grid-odd">
         <table class="table table-striped">
           <thead style="height:38px;">
