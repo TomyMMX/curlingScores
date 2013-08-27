@@ -1,4 +1,5 @@
 $(document).ready(function() { 
+  $('#generated').html("<div style=\"width: 10px; display: block; margin-left: auto; margin-right: auto; margin-bottom:5px;\"><img src=\"http://i.imgur.com/kV3lFh0.gif\"/></div>");
   generateTables();
 });
 
@@ -35,7 +36,8 @@ function generateTables(){
             gameFiles[gd["eventName"]][gameFiles[gd["eventName"]].length]=key;
           }
         }
-      }   
+      }  
+      $('#generated').html(""); 
       /*all other files are considered as JSON object representing games*/      
       for (var event in games) {  
         $('#generated').html($('#generated').html()+"<h3>"+event+"</h3>");
@@ -63,7 +65,7 @@ function generateTables(){
       }       
     },
     error : function(jqXHR, textStatus, errorThrown) {
-      alert("Error getting live games. "+errorThrown);
+      $('#generated').html(errorThrown); 
     },
     complete : function() {
         //console.log("Venue Patch Ran");

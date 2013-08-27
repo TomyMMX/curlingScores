@@ -237,6 +237,7 @@ var games = [];
 var gameFiles = [];
 /*get existing games and fill table*/
 function loadPastGames(){
+  $('#pastTable').html("<tr><td colspan=3><div style=\"display: block; margin-left: auto; margin-right: auto; margin-bottom: 3px; width:0px;\"><img src=\"http://i.imgur.com/kV3lFh0.gif\"></div><td><tr>");
   //generate HTML from gist     
   $.get('https://api.github.com/gists/6330648', function(data) {
     games = [];
