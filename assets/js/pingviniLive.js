@@ -1,5 +1,5 @@
 $(document).ready(function() { 
-  $('#liveScore').html("<div style=\"width: 100px; display: block; margin-left: auto; margin-right: auto; margin-bottom:5px;\"><img src=\"http://i.imgur.com/kV3lFh0.gif\"/></div>");
+  $('#liveScore').html("<div style=\"width: 100px; display: block; margin-left: auto; margin-right: auto; margin-bottom:5px;\"><img src=\"http://i.imgur.com/kV3lFh0.gif\" style=\"width:48px; height:48px;\"/></div>");
   $.ajax({
     headers : {'Accept':'application/json', 
                'Content-Type':'application/json'},
