@@ -28,6 +28,7 @@ $(document).ready(function() {
       }
       //add this game to output      
       $('#liveScore').html(tableOut);
+      $('#boardBuffer').hide();
     },
     error : function(jqXHR, textStatus, errorThrown) {
        $('#liveScore').html(errorThrown);
