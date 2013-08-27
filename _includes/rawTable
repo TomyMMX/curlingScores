@@ -1,240 +1,68 @@
 <div class="livescore">  
-  <div class="score row" style="clear:both; margin-left:0px; margin-right:0px;">
-    <div class="col-4 col-lg-3 col-sm-3">
-      <div class="row">
-        <table class="table table-striped">
-          <thead style="height:38px;">
-            <tr>
-              <th colspan="2">                
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr style="height:40px;">
-              <td>
-                Pingvini
-              </td>
-              <td>
-                <img class="[H1]" src="http://i.imgur.com/cJNfZCn.png" alt="H" height="20px">
-              </td>
-            </tr>
-            <tr style="height:40px;">
-              <td>
-                [opponent]
-              </td>
-              <td>
-                <img class="[H2]" src="http://i.imgur.com/cJNfZCn.png" alt="H" height="20px">
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-    <div class="col-4 col-lg-1 col-sm-1">
-      <div class="row show-grid">
-        <table class="table table-striped">
-          <thead style="height:38px;">
-            <tr>
-              <th>
-                1
-              </th>
-              <th>
-                2
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr style="height:40px;">
-              <td>
-                [tbS11]
-              </td>
-              <td>
-                [tbS21]
-              </td>
-            </tr>
-            <tr style="height:40px;">
-              <td>
-                [tbS12]
-              </td>
-              <td>
-                [tbS22]
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-    <div class="col-4 col-lg-1 col-sm-1">
-      <div class="row show-grid-odd">
-        <table class="table table-striped">
-          <thead style="height:38px;">
-            <tr>
-              <th>
-                3
-              </th>
-              <th>
-                4
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr style="height:40px;">
-              <td>
-                [tbS31]
-              </td>
-              <td>
-                [tbS41]
-              </td>
-            </tr>
-            <tr style="height:40px;">
-              <td>
-                [tbS32]
-              </td>
-              <td>
-                [tbS42]
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-    <div class="col-4 col-lg-1 col-sm-1">
-      <div class="row show-grid">
-        <table class="table table-striped">
-          <thead style="height:38px;">
-            <tr>
-              <th>
-                5
-              </th>
-              <th>
-                6
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr style="height:40px;">
-              <td>
-                [tbS51]
-              </td>
-              <td>
-                [tbS61]
-              </td>
-            </tr>
-            <tr style="height:40px;">
-              <td>
-                [tbS52]
-              </td>
-              <td>
-                [tbS62]
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-    <div class="col-4 col-lg-1 col-sm-1">
-      <div class="row show-grid-odd">
-        <table class="table table-striped">
-          <thead style="height:38px;">
-            <tr>
-              <th>
-                7
-              </th>
-              <th>
-                8
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr style="height:40px;">
-              <td>
-                [tbS71]
-              </td>
-              <td>
-                [tbS81]
-              </td>
-            </tr>
-            <tr style="height:40px;">
-              <td>
-                [tbS72]
-              </td>
-              <td>
-                [tbS82]
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-    <div class="col-4 col-lg-1 col-sm-1">
-      <div class="row show-grid">
-        <table class="table table-striped">
-          <thead style="height:38px;">
-            <tr>
-              <th>
-                9
-              </th>
-              <th>
-                10
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr style="height:40px;">
-              <td>
-                [tbS91]
-              </td>
-              <td>
-                [tbS101]
-              </td>
-            </tr>
-            <tr style="height:40px;">
-              <td>
-                [tbS92]
-              </td>
-              <td>
-                [tbS102]
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-    <div class="col-12 col-lg-4 col-sm-4">
-      <div class="row show-grid-odd">
-        <table class="table table-striped">
-          <thead style="height:38px;">
-            <tr>
-              <th>
-                Extr.
-              </th>
-              <th>
-                TOTAL
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr style="height:40px;">
-              <td>
-                [tbSe1]
-              </td>
-              <td>
-                <strong>[final1]</strong>
-              </td>
-            </tr>
-            <tr style="height:40px;">
-              <td>
-                [tbSe2]
-              </td>
-              <td>
-                <strong>[final2]</strong>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </div>
+  <div class="table-responsive" style="clear:both; margin-left:0px; margin-right:0px;">
+    <table class="table table-striped" style="margin-bottom:5px;">
+      <thead style="height:42px;">
+        <tr>
+          <th colspan="2"></th>
+          <th>1</th>
+          <th>2</th>
+          <th>3</th>
+          <th>4</th>
+          <th>5</th>
+          <th>6</th>
+          <th>7</th>
+          <th>8</th>
+          <th>9</th>
+          <th>10</th>
+          <th>Extr.</th>
+          <th colspan="2">
+            TOTAL
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="height:42px;">
+          <td>Pingvini</td>
+          <td>
+            <img class="[H1]" src="http://i.imgur.com/cJNfZCn.png" alt="H" style="height:20px; width:20px;">
+          </td>
+          <td>[tbS11]</td>
+          <td>[tbS21]</td>
+          <td>[tbS31]</td>
+          <td>[tbS41]</td>
+          <td>[tbS51]</td>
+          <td>[tbS61]</td>
+          <td>[tbS71]</td>
+          <td>[tbS81]</td>
+          <td>[tbS91]</td>
+          <td>[tbS101]</td>
+          <td>[tbSe1]</td>
+          <td colspan="2">
+            <strong>[final1]</strong>
+          </td>
+        </tr>
+        <tr style="height:42px;">
+          <td>[opponent]</td>
+          <td><img class="[H2]" src="http://i.imgur.com/cJNfZCn.png" alt="H" style="height:20px; width:20px;">
+          </td>
+          <td>[tbS12]</td>
+          <td>[tbS22]</td>
+          <td>[tbS32]</td>
+          <td>[tbS42]</td>
+          <td>[tbS52]</td>
+          <td>[tbS62]</td>
+          <td>[tbS72]</td>
+          <td>[tbS82]</td>
+          <td>[tbS92]</td>
+          <td>[tbS102]</td>
+          <td>[tbSe2]</td>
+          <td colspan="2">
+            <strong>[final2]</strong>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>  
   <div class="score-title pull-right"><strog>[location], [dateTime]</strong></div>
   <div class="score-comments [lcClass]" style="margin-left:10px; margin-top:-5px;">
     <h4>
