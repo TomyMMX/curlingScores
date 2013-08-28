@@ -19,12 +19,12 @@ $(document).ready(function() {
       if(gamedata["liveComments"].length<3){
           tableOut=tableOut.replace("[lcClass]", "hidden");       
       }
+      tableOut = tableOut.replace("[codeBtn]", "");
       var reg = new RegExp('\\[([^\\[]*)\\]', 'g');   
       var result;
       while((result = reg.exec(response.files["rawTable"].content)) 
              !== null) {
-        tableOut=
-          tableOut.replace("["+result[1]+"]", gamedata[result[1]]);
+        tableOut=tableOut.replace("["+result[1]+"]", gamedata[result[1]]);
       }
       //add this game to output      
       $('#liveScore').html(tableOut);

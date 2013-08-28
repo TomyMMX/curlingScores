@@ -71,12 +71,17 @@ h1, h2, h3 {
 .livescore{
   margin-bottom: 5px;
 }
+
+#generated h3{
+  margin-top:25px;
+  margin-bottom:0px;
+}
 .score{
   margin:2px;
 }
 .score table{
   margin-bottom:0px;
-  border-bottom: 1px solid rgb(55,55,55);  
+  border-bottom: 1px solid rgb(150,150,150);  
 }
 .show-grid-odd {
     background-color: #EEEEEE; 
@@ -101,9 +106,7 @@ h1, h2, h3 {
   display: none; 
 }
 .score-code-btn{
-  float: right;
-  margin-right: 2px;
-  margin-bottom: 5px;
+  
 }
     
     

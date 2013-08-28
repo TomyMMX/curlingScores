@@ -90,7 +90,7 @@ function generateNewGame(){
     $("#tbNewLocation").val("");
     $("#tbNewEvent").val("");
 
-    var newRow = "<tr><td id=\"lbEv_"+newName+"\">"+$("#tbEvent").val()+"</td><td id=\"lbLc_"+newName+"\">"+$("#tbLocation").val()+"</td><td id=\"lbTm_"+newName+"\">"+$("#tbDateTime").val()+"</td><td><button id=\"btnE_"+newName+"\" type=\"button\" class=\"btn btn-primary btn-xs\">Edit</button></td></tr>";   
+    var newRow = "<tr><td id=\"lbEv_"+newName+"\">"+$("#tbEvent").val()+"</td><td id=\"lbLc_"+newName+"\">"+$("#tbLocation").val()+"</td><td id=\"lbTm_"+newName+"\">"+$("#tbDateTime").val()+"</td><td id=\"lbOpp_"+newname+"\"></td><td><button id=\"btnE_"+newName+"\" type=\"button\" class=\"btn btn-primary btn-xs\">Edit</button></td></tr>";   
     $("#pastTable").html($("#pastTable").html()+newRow);
 
     $('#btnE_'+newName).click(function(e){
@@ -225,6 +225,7 @@ function generateTableJson(){
   $("#lbEv_"+curFile).text(data["eventName"]);
   $("#lbLc_"+curFile).text(data["location"]);
   $("#lbTm_"+curFile).text(data["dateTime"]);
+  $("#lbOpp_"+curFile).text(data["opponent"]);
 }
 
 function randomString(length, chars) {
@@ -262,10 +263,11 @@ function loadPastGames(){
     for (var x = 0; x < games.length; x++) {             
       var gamedata = games[x];
        
-      var newRow = "<tr><td id=\"lbEv_"+gameFiles[x]+"\">[event]</td><td id=\"lbLc_"+gameFiles[x]+"\">[location]</td><td id=\"lbTm_"+gameFiles[x]+"\">[time]</td><td><button id=\"btnE_[file]\" type=\"button\" class=\"btn btn-primary btn-xs\">Edit</button></td></tr>";   
+      var newRow = "<tr><td id=\"lbEv_"+gameFiles[x]+"\">[event]</td><td id=\"lbLc_"+gameFiles[x]+"\">[location]</td><td id=\"lbTm_"+gameFiles[x]+"\">[time]</td><td id=\"lbOpp_"+gameFiles[x]+"\">[opponent]</td><td><button id=\"btnE_[file]\" type=\"button\" class=\"btn btn-primary btn-xs\">Edit</button></td></tr>";   
       newRow = newRow.replace("[event]", gamedata["eventName"]);
       newRow = newRow.replace("[location]", gamedata["location"]);
       newRow = newRow.replace("[time]", gamedata["dateTime"]);
+      newRow = newRow.replace("[opponent]", gamedata["opponent"]);
       newRow = newRow.replace("[file]", gameFiles[x]);
       pastHtml+=newRow;
     }

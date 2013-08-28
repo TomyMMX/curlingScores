@@ -73,9 +73,11 @@ function generateTables(){
   });
 }
 var prevCode = '[gameCode]';
-function addGame(gamedata, tableHtml, fileName){
-  var tableOut="<a data-toggle=\"modal\" id=\"btnCs_"+fileName+"\" class=\"btn btn-primary btn-sm score-code-btn\">Include code</a>"
-  tableOut += tableHtml;
+function addGame(gamedata, tableHtml, fileName){  
+  var tableOut = tableHtml;
+  
+  tableOut = tableOut.replace("[codeBtn]", "<a data-toggle=\"modal\" style=\"clear:both;\" id=\"btnCs_"+fileName+"\" class=\"btn btn-primary btn-sm score-code-btn\">Include code</a>");
+  
   if(gamedata["liveComments"].length<3){
     tableOut=tableOut.replace("[lcClass]", "hidden");       
   }
