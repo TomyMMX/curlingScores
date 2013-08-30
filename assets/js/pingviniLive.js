@@ -1,4 +1,4 @@
-$(document).ready(function() { 
+function getGameBoard(){ 
   $('#liveScore').html("<div style=\"width: 100px; display: block; margin-left: auto; margin-right: auto; margin-bottom:5px;\"><img src=\"http://i.imgur.com/kV3lFh0.gif\" style=\"width:48px; height:48px;\"/></div>");
   $.ajax({
     headers : {'Accept':'application/json', 
@@ -6,7 +6,7 @@ $(document).ready(function() {
     url : 'https://api.github.com/gists/6330648',
     type : 'GET',
     success : function(response, textStatus, jqXhr) {
-      var tableOut= response.files["rawTable"].content;
+      var tableOut= response.files.rawTable.content;
       var gamedata = {};
       try{
         gamedata = 
@@ -16,14 +16,13 @@ $(document).ready(function() {
         return;
       }      
       /*replace placeholders with data*/            
-      if(gamedata["liveComments"].length<3){
+      if(gamedata.liveComments.length<3){
           tableOut=tableOut.replace("[lcClass]", "hidden");       
       }
       tableOut = tableOut.replace("[codeBtn]", "");
       var reg = new RegExp('\\[([^\\[]*)\\]', 'g');   
       var result;
-      while((result = reg.exec(response.files["rawTable"].content)) 
-             !== null) {
+      while((result = reg.exec(response.files.rawTable.content)) !== null) {
         tableOut=tableOut.replace("["+result[1]+"]", gamedata[result[1]]);
       }
       //add this game to output      
@@ -35,4 +34,11 @@ $(document).ready(function() {
     },
     complete : function() {}
   });
+  setTimeout(function(){
+    getGameBoard();
+  }, 300000); 
+}
+
+$(document).ready(function() { 
+    getGameBoard();
 });
