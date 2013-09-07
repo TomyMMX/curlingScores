@@ -31,7 +31,7 @@ $(document).ready(function() {
     });      
     generateTableJson();
   });
-  $('input[id^=tbS], #opponent, #tbLocation, #tbDateTime, #tbEvent, #liveComments').change(function() { 
+  $('input[id^=tbS], #opponent, #teamName, #tbLocation, #tbDateTime, #tbEvent, #liveComments').change(function() { 
     var currentId = $(this).attr('id');
     var cidLen = currentId.length-1;
     var otherId = currentId.replaceAt(cidLen, 
