@@ -163,7 +163,7 @@ function generateTableJson(){
   data["final1"]=$("#final1").text();
   data["final2"]=$("#final2").text();
   data["opponent"]=$("#opponent").val();
-  data["teamName"]=$("#teamName).val();
+  data["teamName"]=$("#teamName").val();
   data["liveComments"]=$("#liveComments").val();
   
   var regex = new RegExp("\n", "g");
