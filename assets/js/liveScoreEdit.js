@@ -120,6 +120,7 @@ function editExistingGame(gameName){
   $("#tbSe1").val(thisGame["tbSe1"]);   
   $("#tbSe2").val(thisGame["tbSe2"]);      
   $("#opponent").val(thisGame["opponent"]);
+  $("#teamName").val(thisGame["teamName"]);
   $("#tbLocation").val(thisGame["location"]);
   $("#tbDateTime").val(thisGame["dateTime"]);
   $("#tbEvent").val(thisGame["eventName"]);
@@ -162,6 +163,7 @@ function generateTableJson(){
   data["final1"]=$("#final1").text();
   data["final2"]=$("#final2").text();
   data["opponent"]=$("#opponent").val();
+  data["teamName"]=$("#teamName).val();
   data["liveComments"]=$("#liveComments").val();
   
   var regex = new RegExp("\n", "g");
@@ -226,6 +228,7 @@ function generateTableJson(){
   $("#lbLc_"+curFile).text(data["location"]);
   $("#lbTm_"+curFile).text(data["dateTime"]);
   $("#lbOpp_"+curFile).text(data["opponent"]);
+  
 }
 
 function randomString(length, chars) {
