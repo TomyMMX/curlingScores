@@ -100,8 +100,8 @@ function getGameBoard(){
     url : 'https://api.github.com/gists/6330648',
     type : 'GET',
     success : function(response, textStatus, jqXhr) {
-      var tableOut= response.files.rawTable.content;
       $('[id^=liveScore_]').each(function(index){
+        var tableOut= response.files.rawTable.content;
         var gameCode=$(this).attr('id').replace('liveScore_', '');  
         var gamedata = {};
         try{
