@@ -90,7 +90,7 @@ function generateNewGame(){
     $("#tbNewLocation").val("");
     $("#tbNewEvent").val("");
 
-    var newRow = "<tr><td id=\"lbEv_"+newName+"\">"+$("#tbEvent").val()+"</td><td id=\"lbLc_"+newName+"\">"+$("#tbLocation").val()+"</td><td id=\"lbTm_"+newName+"\">"+$("#tbDateTime").val()+"</td><td id=\"lbOpp_"+newname+"\"></td><td><button id=\"btnE_"+newName+"\" type=\"button\" class=\"btn btn-primary btn-xs\">Edit</button></td></tr>";   
+    var newRow = "<tr><td id=\"lbEv_"+newName+"\">"+$("#tbEvent").val()+"</td><td id=\"lbLc_"+newName+"\">"+$("#tbLocation").val()+"</td><td id=\"lbTm_"+newName+"\">"+$("#tbDateTime").val()+"</td><td id=\"lbOpp_"+newName+"\"></td><td><button id=\"btnE_"+newName+"\" type=\"button\" class=\"btn btn-primary btn-xs\">Edit</button></td></tr>";   
     $("#pastTable").html($("#pastTable").html()+newRow);
 
     $('#btnE_'+newName).click(function(e){
