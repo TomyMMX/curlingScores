@@ -134,7 +134,7 @@ function getGameBoard(){
   });
   setTimeout(function(){
     getGameBoard();
-  }, 300000); 
+  }, 30000000); 
 }
 
 onDomReady(function() { 
