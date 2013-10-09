@@ -9,7 +9,7 @@ $(document).ready(function() {
       // Allow: backspace, delete, and enter
       if ( event.keyCode == 46 || event.keyCode == 8 || event.keyCode == 13 || 
          // Allow: Ctrl+A
-         (event.keyCode == 65 && event.ctrlKey === true)) {
+         (event.keyCode == 65 && event.ctrlKey === true)||event.keyCode == 88) {
          // let it happen, don't do anything
          return;
       }
@@ -34,9 +34,13 @@ $(document).ready(function() {
   $('input[id^=tbS], #opponent, #teamName, #tbLocation, #tbDateTime, #tbEvent, #liveComments').change(function() { 
     var currentId = $(this).attr('id');
     var cidLen = currentId.length-1;
-    var otherId = currentId.replaceAt(cidLen, 
-                                      currentId.charAt(cidLen) == '1' ? '2' :'1');       
-    $("#"+otherId).val("");      
+    var otherId = currentId.replaceAt(cidLen, currentId.charAt(cidLen) == '1' ? '2' :'1');       
+    if($(this).val()=='x'){
+        $("#"+otherId).val("x");
+    }
+    else{
+        $("#"+otherId).val("");
+    }
     generateTableJson();
   });
     
